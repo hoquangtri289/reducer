@@ -2,6 +2,7 @@ import React from 'react';
 import Count from './coponents/Count';
 import FetchOne from './coponents/FetchOne';
 import FetchMany from './coponents/FetchMany';
+import CountABCD from './coponents/CountABCD';
 
 
 let theme = {
@@ -29,6 +30,8 @@ function App(){
   return(
     <MyTheme.Provider value={theme.dark}>
       <Count />
+      <CountABCD />
+      <FetchOne />
       <FetchMany />
     </MyTheme.Provider>
   )

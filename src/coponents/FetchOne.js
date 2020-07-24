@@ -32,8 +32,7 @@ export default function FetchOne() {
     });
     let handleClickSetId = () => {
         let id = Math.random() * 100;
-        console.log(parseInt(id));
-        setId(parseInt(id) == 0 ? 1 : parseInt(id));
+        setId(parseInt(id) === 0 ? 1 : parseInt(id));
     };
 
     let handleClickClearTimeId = () => {

@@ -13,6 +13,9 @@ let reducer = (state, action) => {
         case "reset": {
             return initCouter;
         }
+        default: {
+            return state;
+        }
     }
 };
 
