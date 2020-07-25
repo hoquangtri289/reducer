@@ -4,6 +4,7 @@ import FetchOne from './coponents/fetch/FetchOne'
 import FetchMany from './coponents/fetch/FetchMany';
 import CountABCD from './coponents/count/CountABCD'
 import UseCallBack from './coponents/useCallBack/Parent';
+import Memo from './coponents/useMemo/Memo';
 
 
 let theme = {
@@ -33,6 +34,7 @@ function App(){
       {/* <Count /> */}
       {/* <CountABCD /> */}
       <UseCallBack />
+      <Memo />
       {/* <FetchOne /> */}
       {/* <FetchMany /> */}
     </MyTheme.Provider>
