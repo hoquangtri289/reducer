@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext, useRef } from "react";
-import { MyTheme } from "../App";
+import { MyTheme } from "../../App";
 
 export default function FetchOne() {
     let [loading, setLoading] = useState(true);

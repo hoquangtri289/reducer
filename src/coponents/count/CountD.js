@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { CountContext } from "./CountABCD";
-import { MyTheme } from "../App";
+import { MyTheme } from '../../App';
 
 export default function CountD() {
     const countContext = useContext(CountContext);

@@ -1,8 +1,9 @@
 import React from 'react';
-import Count from './coponents/Count';
-import FetchOne from './coponents/FetchOne';
-import FetchMany from './coponents/FetchMany';
-import CountABCD from './coponents/CountABCD';
+import Count from './coponents/count/Count';
+import FetchOne from './coponents/fetch/FetchOne'
+import FetchMany from './coponents/fetch/FetchMany';
+import CountABCD from './coponents/count/CountABCD'
+import UseCallBack from './coponents/useCallBack/Parent';
 
 
 let theme = {
@@ -29,10 +30,11 @@ let MyTheme = React.createContext(theme);
 function App(){
   return(
     <MyTheme.Provider value={theme.dark}>
-      <Count />
-      <CountABCD />
-      <FetchOne />
-      <FetchMany />
+      {/* <Count /> */}
+      {/* <CountABCD /> */}
+      <UseCallBack />
+      {/* <FetchOne /> */}
+      {/* <FetchMany /> */}
     </MyTheme.Provider>
   )
 }

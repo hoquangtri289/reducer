@@ -5,7 +5,7 @@ import React, {
     useState,
     useContext,
 } from "react";
-import { MyTheme } from "../App";
+import { MyTheme } from "../../App";
 
 let initFetch = {
     loading: true,

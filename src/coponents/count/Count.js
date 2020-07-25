@@ -1,5 +1,5 @@
 import React, { useContext, useReducer } from "react";
-import { MyTheme } from "../App";
+import { MyTheme } from "../../App";
 
 let initCouter = { count: 0 };
 let reducer = (state, action) => {
