@@ -11,6 +11,8 @@ export default function CountD() {
             <button
                 style={{
                     padding: myThem.padding,
+                    color: myThem.color,
+                    backgroundColor: myThem.backgroundcolor
                 }}
                 onClick={() => countContext.dispatchCount({ type: "cong" })}
             >
@@ -19,6 +21,8 @@ export default function CountD() {
             <button
                 style={{
                     padding: myThem.padding,
+                    color: myThem.color,
+                    backgroundColor: myThem.backgroundcolor
                 }}
                 onClick={() => countContext.dispatchCount({ type: "tru" })}
             >
@@ -27,6 +31,8 @@ export default function CountD() {
             <button
                 style={{
                     padding: myThem.padding,
+                    color: myThem.color,
+                    backgroundColor: myThem.backgroundcolor
                 }}
                 onClick={() => countContext.dispatchCount({ type: "reset" })}
             >
