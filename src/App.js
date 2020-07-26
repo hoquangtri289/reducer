@@ -18,18 +18,24 @@ let theme = {
     borderBottom: "10px solid blue",
     backgroundColor: "#fafafa",
     light: {
-        color: "red",
-        padding: 16,
-        backgroundcolor: "green",
+      color: "white",
+      padding: 16,
+      backgroundcolor: "#f50057",
+      width: 500,
+      border: "1px solid #33eaff",
+      title: {
+          border: "10px solid #33eaff",
+      },
+      cursor: "pointer",
     },
     dark: {
-        color: "yellow",
+        color: "white",
         padding: 16,
-        backgroundcolor: "red",
+        backgroundcolor: "#2a3eb1",
         width: 500,
-        border: "1px solid grey",
+        border: "1px solid #637bfe",
         title: {
-            border: "10px solid green",
+            border: "10px solid #637bfe",
         },
         cursor: "pointer",
     },
@@ -39,7 +45,7 @@ let MyTheme = React.createContext(theme);
 
 function App() {
     return (
-        <MyTheme.Provider value={theme.dark}>
+        <MyTheme.Provider value={theme.light}>
             <h2
                 style={{
                     padding: theme.padding,
