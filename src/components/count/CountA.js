@@ -7,7 +7,7 @@ export default function CountA() {
     let myThem = useContext(MyTheme);
     return (
         <React.Fragment>
-            CountA: {countContext.countState}
+            <h4>CountA: {countContext.countState}</h4>
             <button
                 style={{
                     padding: myThem.padding,

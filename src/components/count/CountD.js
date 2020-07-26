@@ -7,7 +7,7 @@ export default function CountD() {
     const myThem = useContext(MyTheme);
     return (
         <React.Fragment>
-            CountD: {countContext.countState}
+            <h4>CountD: {countContext.countState}</h4>
             <button
                 style={{
                     padding: myThem.padding,

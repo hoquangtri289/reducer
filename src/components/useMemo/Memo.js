@@ -1,6 +1,8 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useContext } from "react";
+import { MyTheme } from "../../App";
 
 function Memo() {
+    let myTheme = useContext(MyTheme);
     let [countA, setCountA] = useState(0);
     let [countB, setCountB] = useState(0);
 
@@ -38,13 +40,31 @@ function Memo() {
     return (
         <React.Fragment>
             <div>
-                <button onClick={handleClickCountA}>Click Count A</button>
+                <button
+                    style={{
+                        padding: myTheme.padding,
+                        color: myTheme.color,
+                        backgroundColor: myTheme.backgroundcolor,
+                    }}
+                    onClick={handleClickCountA}
+                >
+                    Click Count A
+                </button>
+                Count A: {countA}
                 {isSmall ? "chan" : "le"}
                 {/* {isSmall() ? 'chan' : 'le'} */}
-                Count A: {countA}
             </div>
             <div>
-                <button onClick={handleClickCountB}>Click Count B</button>
+                <button
+                    style={{
+                        padding: myTheme.padding,
+                        color: myTheme.color,
+                        backgroundColor: myTheme.backgroundcolor,
+                    }}
+                    onClick={handleClickCountB}
+                >
+                    Click Count B
+                </button>
                 Count B: {countB}
             </div>
         </React.Fragment>

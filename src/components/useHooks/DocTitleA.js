@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import useDocTitle from "../../hooks/useDocTitle";
+import { MyTheme } from "../../App";
 
 const DocTitleA = () => {
+    let myTheme = useContext(MyTheme);
     let [count, setCount] = useState(0);
     let handleClickCount = () => {
         setCount(count + 1);
@@ -10,7 +12,16 @@ const DocTitleA = () => {
     useDocTitle(count);
     return (
         <div>
-            <button onClick={handleClickCount}>Click Change DocTitle A</button>
+            <button
+                style={{
+                    padding: myTheme.padding,
+                    color: myTheme.color,
+                    backgroundColor: myTheme.backgroundcolor,
+                }}
+                onClick={handleClickCount}
+            >
+                Click Change DocTitle A
+            </button>
             <span>Count: {count}</span>
         </div>
     );

@@ -39,6 +39,8 @@ const useFormInput = () => {
                 <button
                     style={{
                         padding: myTheme.padding,
+                        color: myTheme.color,
+                        backgroundColor: myTheme.backgroundcolor,
                     }}
                     type="submit"
                 >

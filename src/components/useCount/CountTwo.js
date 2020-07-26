@@ -1,9 +1,9 @@
-import React, { useContext} from "react";
+import React, { useContext } from "react";
 import { MyTheme } from "../../App";
 import useCouter from "../../hooks/useCouter";
 
 let CountTwo = () => {
-    let myThem = useContext(MyTheme);
+    let myTheme = useContext(MyTheme);
     let [count, handleClickCong, handleClickTru, handleClickReset] = useCouter(
         0,
         1
@@ -14,8 +14,10 @@ let CountTwo = () => {
             <div>
                 <button
                     style={{
-                        padding: myThem.padding,
-                        cursor: myThem.cursor,
+                        padding: myTheme.padding,
+                        cursor: myTheme.cursor,
+                        color: myTheme.color,
+                        backgroundColor: myTheme.backgroundcolor,
                     }}
                     onClick={handleClickCong}
                 >
@@ -23,8 +25,10 @@ let CountTwo = () => {
                 </button>
                 <button
                     style={{
-                        padding: myThem.padding,
-                        cursor: myThem.cursor,
+                        padding: myTheme.padding,
+                        cursor: myTheme.cursor,
+                        color: myTheme.color,
+                        backgroundColor: myTheme.backgroundcolor,
                     }}
                     onClick={handleClickTru}
                 >
@@ -32,8 +36,10 @@ let CountTwo = () => {
                 </button>
                 <button
                     style={{
-                        padding: myThem.padding,
-                        cursor: myThem.cursor,
+                        padding: myTheme.padding,
+                        cursor: myTheme.cursor,
+                        color: myTheme.color,
+                        backgroundColor: myTheme.backgroundcolor,
                     }}
                     onClick={handleClickReset}
                 >
