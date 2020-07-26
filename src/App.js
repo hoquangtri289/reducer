@@ -1,10 +1,12 @@
 import React from 'react';
-import Count from './coponents/count/Count';
-import FetchOne from './coponents/fetch/FetchOne'
-import FetchMany from './coponents/fetch/FetchMany';
-import CountABCD from './coponents/count/CountABCD'
-import UseCallBack from './coponents/useCallBack/Parent';
-import Memo from './coponents/useMemo/Memo';
+import Count from './components/count/Count';
+import FetchOne from './components/fetch/FetchOne'
+import FetchMany from './components/fetch/FetchMany';
+import CountABCD from './components/count/CountABCD'
+import UseCallBack from './components/useCallBack/Parent';
+import Memo from './components/useMemo/Memo';
+import DocTitleA from './components/useHooks/DocTitleA';
+import DocTitleB from './components/useHooks/DocTitleB';
 
 
 let theme = {
@@ -33,8 +35,10 @@ function App(){
     <MyTheme.Provider value={theme.dark}>
       {/* <Count /> */}
       {/* <CountABCD /> */}
-      <UseCallBack />
-      <Memo />
+      {/* <UseCallBack /> */}
+      {/* <Memo /> */}
+      <DocTitleA />
+      <DocTitleB />
       {/* <FetchOne /> */}
       {/* <FetchMany /> */}
     </MyTheme.Provider>
