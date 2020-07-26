@@ -43,7 +43,7 @@ export default function FetchOne() {
             {loading ? (
                 "Dag tai ..."
             ) : (
-                <div style={{ width: myThem.width, border: myThem.border }}>
+                <div style={{border: myThem.border }}>
                     <div
                         style={{
                             padding: myThem.padding,
