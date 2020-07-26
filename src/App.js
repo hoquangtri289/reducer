@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Count from './components/count/Count';
 import FetchOne from './components/fetch/FetchOne'
 import FetchMany from './components/fetch/FetchMany';
@@ -7,6 +8,8 @@ import UseCallBack from './components/useCallBack/Parent';
 import Memo from './components/useMemo/Memo';
 import DocTitleA from './components/useHooks/DocTitleA';
 import DocTitleB from './components/useHooks/DocTitleB';
+import CountOne from './components/useCount/CountOne';
+import CountTwo from './components/useCount/CountTwo';
 
 
 let theme = {
@@ -39,6 +42,8 @@ function App(){
       {/* <Memo /> */}
       <DocTitleA />
       <DocTitleB />
+      <CountOne />
+      <CountTwo />
       {/* <FetchOne /> */}
       {/* <FetchMany /> */}
     </MyTheme.Provider>
