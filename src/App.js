@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 
 import Count from "./components/count/Count";
 import FetchOne from "./components/fetch/FetchOne";
@@ -30,11 +30,11 @@ let theme = {
         cursor: "pointer",
     },
     dark: {
-        color: "white",
+        color: "red",
         padding: 16,
-        backgroundcolor: "#2a3eb1",
+        backgroundcolor: "black",
         width: 500,
-        border: "1px solid #637bfe",
+        border: "1px solid blue",
         title: {
             border: "10px solid #637bfe",
         },
@@ -82,8 +82,17 @@ let arrBody = [
 ];
 
 function App() {
+    const [check, setCheck] = useState(true);
+    let handleClickThem = () => {
+        setCheck(!check)
+    }
     return (
-        <MyTheme.Provider value={theme.light}>
+        <MyTheme.Provider value={check ? theme.light : theme.dark}>
+            <button
+            style={{
+                padding: theme.padding
+            }}
+             onClick={handleClickThem}>Set Theme</button>
             <h2
                 style={{
                     padding: theme.padding,
